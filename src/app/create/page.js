@@ -17,6 +17,7 @@ export default function Create() {
       .then((json) => {
         const lastId = json.id;
         router.push(`/read/${lastId}`);
+        router.refresh();
       });
   };
   return (
